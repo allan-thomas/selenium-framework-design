@@ -1,47 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T13:45:09 IST" name="Default suite" finished-at="2025-08-11T13:45:28 IST" duration-ms="18758">
+  <suite started-at="2025-09-12T12:55:42 IST" name="Suite" finished-at="2025-09-12T12:56:09 IST" duration-ms="27135">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7d900ecf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" name="LoginErrorValidation" class="javaseleniumlearning.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:javaseleniumlearning.tests.SubmitOrderTest@61710c6]" name="submitOrder" class="javaseleniumlearning.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.OrderHistoryTest()[pri:0, instance:javaseleniumlearning.tests.SubmitOrderTest@61710c6]" name="OrderHistoryTest" class="javaseleniumlearning.tests.SubmitOrderTest"/>
+      </group> <!-- purchase -->
     </groups>
-    <test started-at="2025-08-11T13:45:09 IST" name="Default test" finished-at="2025-08-11T13:45:28 IST" duration-ms="18758">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@7d900ecf]" started-at="2025-08-11T13:45:09 IST" name="setUpClass" finished-at="2025-08-11T13:45:09 IST" duration-ms="479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@588f63c]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-09-12T12:55:42 IST" name="Error Validations Test" finished-at="2025-09-12T12:56:09 IST" duration-ms="27135">
+      <class name="javaseleniumlearning.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:55:42 IST" name="launchApplication" finished-at="2025-09-12T12:55:51 IST" duration-ms="8789" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7d900ecf]" started-at="2025-08-11T13:45:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-11T13:45:28 IST" duration-ms="18210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive Test of submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce Website"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:55:51 IST" name="LoginErrorValidation" finished-at="2025-09-12T12:55:53 IST" duration-ms="1446" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at javaseleniumlearning.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@7d900ecf]" started-at="2025-08-11T13:45:28 IST" name="tearDownClass" finished-at="2025-08-11T13:45:28 IST" duration-ms="27" status="PASS">
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:55:53 IST" name="tearDown" finished-at="2025-09-12T12:55:53 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:55:53 IST" name="launchApplication" finished-at="2025-09-12T12:55:59 IST" duration-ms="5495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:55:59 IST" name="ProductErrorValidation" finished-at="2025-09-12T12:56:09 IST" duration-ms="10314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:javaseleniumlearning.tests.ErrorValidationsTest@723e88f9]" started-at="2025-09-12T12:56:09 IST" name="tearDown" finished-at="2025-09-12T12:56:09 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- javaseleniumlearning.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- Suite -->
 </testng-results>

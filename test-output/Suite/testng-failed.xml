@@ -15,16 +15,4 @@
       </class> <!-- javaseleniumlearning.tests.ErrorValidationsTest -->
     </classes>
   </test> <!-- Error Validations Test(failed) -->
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
-    <classes>
-      <class name="javaseleniumlearning.tests.SubmitOrderTest">
-        <methods>
-          <include name="submitOrder" invocation-numbers="0 1"/>
-          <include name="launchApplication"/>
-          <include name="OrderHistoryTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- javaseleniumlearning.tests.SubmitOrderTest -->
-    </classes>
-  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
