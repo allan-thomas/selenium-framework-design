@@ -76,6 +76,6 @@ public class RegistrationPage extends AbstractComponent {
             ageCheckbox.click();
         }
 
-        registerButton.click();
+        registerButton.click(); //
     }
 }
