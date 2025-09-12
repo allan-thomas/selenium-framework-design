@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import javaseleniumlearning.AbstractComponents.AbstractComponent;
+import org.openqa.selenium.support.ui.Select;
 
 public class RegistrationPage extends AbstractComponent {
 
@@ -17,34 +18,64 @@ public class RegistrationPage extends AbstractComponent {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "#userName")
-    WebElement nameField;
+    @FindBy(id = "firstName")
+    WebElement firstNameField;
 
-    @FindBy(css = "#userEmail")
+    @FindBy(id = "lastName")
+    WebElement lastNameField;
+
+    @FindBy(id = "userEmail")
     WebElement emailField;
 
-    @FindBy(css = "#userPassword")
+    @FindBy(id = "userMobile")
+    WebElement phoneField;
+
+    @FindBy(css = "select[formcontrolname='occupation']")
+    WebElement occupationDropdown;
+
+    @FindBy(css = "input[type='radio'][formcontrolname='gender'][value='Male']")
+    WebElement genderMaleRadio;
+
+    @FindBy(css = "input[type='radio'][formcontrolname='gender'][value='Female']")
+    WebElement genderFemaleRadio;
+
+    @FindBy(id = "userPassword")
     WebElement passwordField;
 
-    @FindBy(css = "#register")
+    @FindBy(id = "confirmPassword")
+    WebElement confirmPasswordField;
+
+    @FindBy(css = "input[type='checkbox'][formcontrolname='required']")
+    WebElement ageCheckbox;
+
+    @FindBy(id = "login")
     WebElement registerButton;
 
-    @FindBy(css = ".toast-bottom-right")
-    WebElement messageElement;
-
-    public void goTo() {
-        driver.get("https://rahulshettyacademy.com/client/register");
-    }
-
-    public void registerUser(String name, String email, String password) {
-        nameField.sendKeys(name);
+    public void registerUser(
+            String firstName, String lastName, String email, String phone,
+            String occupation, String gender, String password, String confirmPassword
+    ) {
+        firstNameField.sendKeys(firstName);
+        lastNameField.sendKeys(lastName);
         emailField.sendKeys(email);
-        passwordField.sendKeys(password);
-        registerButton.click();
-    }
+        phoneField.sendKeys(phone);
 
-    public String getMessage() {
-        waitForWebElementToAppear(messageElement);
-        return messageElement.getText();
+        Select selectOccupation = new Select(occupationDropdown);
+        selectOccupation.selectByVisibleText(occupation);
+
+        if (gender.equalsIgnoreCase("Male")) {
+            genderMaleRadio.click();
+        } else if (gender.equalsIgnoreCase("Female")) {
+            genderFemaleRadio.click();
+        }
+
+        passwordField.sendKeys(password);
+        confirmPasswordField.sendKeys(confirmPassword);
+
+        if (!ageCheckbox.isSelected()) {
+            ageCheckbox.click();
+        }
+
+        registerButton.click();
     }
 }
