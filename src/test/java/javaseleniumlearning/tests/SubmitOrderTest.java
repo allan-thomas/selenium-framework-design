@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javaseleniumlearning.pageobjects.*;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -23,17 +24,23 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import javaseleniumlearning.TestComponents.BaseTest;
-import javaseleniumlearning.pageobjects.CartPage;
-import javaseleniumlearning.pageobjects.CheckoutPage;
-import javaseleniumlearning.pageobjects.ConfirmationPage;
-import javaseleniumlearning.pageobjects.LandingPage;
-import javaseleniumlearning.pageobjects.OrderPage;
-import javaseleniumlearning.pageobjects.ProductCatalogue;
 
 public class SubmitOrderTest extends BaseTest {
 
 	@Test(dataProvider = "getData", groups = "purchase")
 	public void submitOrder(HashMap<String, String> input) throws InterruptedException, IOException {
+
+		RegistrationPage registrationPage = new RegistrationPage(driver);
+		registrationPage.registerUser(
+				input.get("firstName"),
+				input.get("lastName"),
+				input.get("email"),
+				input.get("phone"),
+				input.get("occupation"),
+				input.get("gender"),
+				input.get("password"),
+				input.get("confirmPassword")
+		);
 
 		ProductCatalogue productcatalogue = landingpage.loginApplication(input.get("username"), input.get("password"));
 
