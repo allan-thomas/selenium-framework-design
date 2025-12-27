@@ -2,7 +2,7 @@
 Feature: Error Validation
 
 @ErrorValidation
-Scenario Outline: Negative Test of Loging in
+Scenario Outline: Negative Test of Logging in
 
 Given I landed on Ecommerce Page
 When  Logged in with username <name> and password <password>
