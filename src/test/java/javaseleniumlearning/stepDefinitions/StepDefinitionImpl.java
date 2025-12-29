@@ -26,24 +26,23 @@ import javaseleniumlearning.pageobjects.ConfirmationPage;
 import javaseleniumlearning.pageobjects.LandingPage;
 import javaseleniumlearning.pageobjects.ProductCatalogue;
 
-public class StepDefinitionImpl {
+public class StepDefinitionImpl extends BaseTest {
 
-	public BaseTest b= new BaseTest();
 	public LandingPage landingpage;
 	public ProductCatalogue productcatalogue;
 	public CartPage cart; 
 	public ConfirmationPage confirmationpage;
 
 	@Before
-	public void launchApplication() throws IOException {
+	public void claunchApplication() throws IOException {
 
-		landingpage = b.launchApplication();
+		landingpage = launchApplication();
 	}
 	
 //	Given I landed on Ecommerce Page
 	@Given("I landed on Ecommerce Page")
 	public void I_landed_on_Ecommerce_Page() throws IOException {
-//		landingpage = launchApplication();  moved this to BEFORE statement
+//		landingpage = launchApplication();  //moved this to BEFORE statement
 	}
 	
 //	Given Logged in with username <name> and password <password>
@@ -86,7 +85,7 @@ public class StepDefinitionImpl {
 	}
 
 	@After
-	public void tearDown() {
-		b.tearDown();
+	public void ctearDown() {
+		tearDown();
 	}
 }

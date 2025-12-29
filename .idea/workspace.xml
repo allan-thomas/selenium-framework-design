@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9b8888-84bf-40e2-8320-af69f32357f7" name="Changes" comment="">
+    <list default="true" id="6f9b8888-84bf-40e2-8320-af69f32357f7" name="Changes" comment="from LAP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidationsTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidationsTest.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/stepDefinitions/StepDefinitionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/stepDefinitions/StepDefinitionImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-cucumber.TestNGTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-cucumber.TestNGTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,12 +101,25 @@
       <option name="presentableId" value="Default" />
       <updated>1766992934874</updated>
       <workItem from="1766992945053" duration="521000" />
-      <workItem from="1766993487950" duration="8844000" />
+      <workItem from="1766993487950" duration="11338000" />
     </task>
+    <task id="LOCAL-00001" summary="from LAP">
+      <option name="closed" value="true" />
+      <created>1767016682308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767016682308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="from LAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="from LAP" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
