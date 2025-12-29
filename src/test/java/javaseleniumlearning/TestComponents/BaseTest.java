@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;

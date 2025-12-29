@@ -5,23 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9b8888-84bf-40e2-8320-af69f32357f7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidationsTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidationsTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/stepDefinitions/StepDefinitionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaseleniumlearning/stepDefinitions/StepDefinitionImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/jquery-3.6.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-cucumber.TestNGTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-cucumber.TestNGTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports1.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports2.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +36,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="37Vf0C6JIXVAT9IJsBrT8zdROPE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.TestNGTestRunner.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -47,10 +57,34 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="TestNGTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cucumber" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.TestNGTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestNGTestRunner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766992934874</updated>
       <workItem from="1766992945053" duration="521000" />
-      <workItem from="1766993487950" duration="1419000" />
+      <workItem from="1766993487950" duration="8844000" />
     </task>
     <servers />
   </component>
