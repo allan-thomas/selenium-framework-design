@@ -49,10 +49,10 @@ public class ProductCatalogue extends AbstractComponent {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 		WebElement prod = getProductByName(productName);
 		prod.findElement(addToCart).click();
-		waitForElementToAppear(toasterMsg);
+//		waitForElementToAppear(toasterMsg); // commented due to flakiness.
 		waitForElementToDisappear(loadingScreen);
 		return goToCartPage();
-		//CartPage cart = new CartPage(driver);;
+//		CartPage cart = new CartPage(driver);
 
 //		driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
 //		goToCartPage();
