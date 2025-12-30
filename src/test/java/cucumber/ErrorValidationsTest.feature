@@ -6,7 +6,7 @@ Scenario Outline: Negative Test of Logging in
 
 Given I landed on Ecommerce Page
 When  Logged in with username <name> and password <password>
-Then "Incorrect email password." message is displayed on Landingpage
+Then "Incorrect email or password." message is displayed on Landingpage
 
 Examples:
 |name          |password  |

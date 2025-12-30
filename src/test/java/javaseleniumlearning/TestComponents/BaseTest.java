@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
@@ -41,7 +43,9 @@ public class BaseTest {
 //		properties.getProperty("browser");
 		if (browserName.contains("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\allan\\OneDrive\\Documents\\chromedriver-win64\\chromedriver.exe");
+					"C:\\Users\\550022867\\OneDrive - GE HealthCare\\Documents\\chromedriver-win64\\chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver",
+//					"C:\\Users\\allan\\OneDrive\\Documents\\chromedriver-win64\\chromedriver.exe");
 //			System.setProperty("webdriver.chrome.driver","C:/Users/allan/OneDrive/Documents/chromedriver-win64/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless"))
@@ -77,7 +81,7 @@ public class BaseTest {
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 
 	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {

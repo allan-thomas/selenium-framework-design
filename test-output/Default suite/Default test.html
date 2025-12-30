@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 28 19:00:12 IST 2025</td>
+<td>Started on:</td><td>Tue Dec 30 20:37:20 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9782 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,9 +76,88 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Test of Logging in", "Error Validation"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at javaseleniumlearning.TestComponents.BaseTest.initializeDriver(BaseTest.java:53)
+	at javaseleniumlearning.TestComponents.BaseTest.launchApplication(BaseTest.java:76)
+	at javaseleniumlearning.stepDefinitions.StepDefinitionImpl.claunchApplication(StepDefinitionImpl.java:39)
+Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:370)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace294851343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace294851343'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at javaseleniumlearning.TestComponents.BaseTest.initializeDriver(BaseTest.java:53)
+	at javaseleniumlearning.TestComponents.BaseTest.launchApplication(BaseTest.java:76)
+	at javaseleniumlearning.stepDefinitions.StepDefinitionImpl.claunchApplication(StepDefinitionImpl.java:39)
+Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:370)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>cucumber.TestNGTestRunner@247bddad</td></tr>
+<tr>
 <td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Test of submitting the order", "Purchase the order from Ecommerce Website"</td>
-<td></td>
-<td>9</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at javaseleniumlearning.TestComponents.BaseTest.initializeDriver(BaseTest.java:53)
+	at javaseleniumlearning.TestComponents.BaseTest.launchApplication(BaseTest.java:76)
+	at javaseleniumlearning.stepDefinitions.StepDefinitionImpl.claunchApplication(StepDefinitionImpl.java:39)
+Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:370)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace59307941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace59307941'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at javaseleniumlearning.TestComponents.BaseTest.initializeDriver(BaseTest.java:53)
+	at javaseleniumlearning.TestComponents.BaseTest.launchApplication(BaseTest.java:76)
+	at javaseleniumlearning.stepDefinitions.StepDefinitionImpl.claunchApplication(StepDefinitionImpl.java:39)
+Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\550022867\OneDrive - GE HealthCare\Documents\chromedriver-win64\chromedriver.exe
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:370)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	... 8 more
+</pre></div></td>
+<td>0</td>
 <td>cucumber.TestNGTestRunner@247bddad</td></tr>
 </table><p>
 </body>

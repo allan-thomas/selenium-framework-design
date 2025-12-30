@@ -1,15 +1,25 @@
 package javaseleniumlearning.stepDefinitions;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
+import java.util.Properties;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import javaseleniumlearning.TestComponents.BaseTest;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import javaseleniumlearning.TestComponents.BaseTest;
 import javaseleniumlearning.pageobjects.CartPage;
 import javaseleniumlearning.pageobjects.CheckoutPage;
 import javaseleniumlearning.pageobjects.ConfirmationPage;
@@ -17,16 +27,22 @@ import javaseleniumlearning.pageobjects.LandingPage;
 import javaseleniumlearning.pageobjects.ProductCatalogue;
 
 public class StepDefinitionImpl extends BaseTest {
-	
+
 	public LandingPage landingpage;
 	public ProductCatalogue productcatalogue;
 	public CartPage cart; 
 	public ConfirmationPage confirmationpage;
+
+	@Before
+	public void claunchApplication() throws IOException {
+
+		landingpage = launchApplication();
+	}
 	
 //	Given I landed on Ecommerce Page
 	@Given("I landed on Ecommerce Page")
 	public void I_landed_on_Ecommerce_Page() throws IOException {
-		landingpage = launchApplication();
+//		landingpage = launchApplication();  //moved this to BEFORE statement
 	}
 	
 //	Given Logged in with username <name> and password <password>
@@ -58,13 +74,18 @@ public class StepDefinitionImpl extends BaseTest {
 	public void message_is_displayed_on_Confirmationpage(String string) {
 		String actualText = confirmationpage.getConfirmationMessage();
 		Assert.assertTrue(actualText.equalsIgnoreCase(string));
-		driver.close();
+		//driver.close();
 	}
 	
 //	Then "Incorrect email password." message is displayed on Landingpage (from ErrorValidation.feature)
 	@Then("{string} message is displayed on Landingpage")
     public void message_is_displayed_on_landingpage(String string) {
 		Assert.assertEquals(landingpage.getErrorMessage(), string);
-		driver.close();
+		//driver.close();
+	}
+
+	@After
+	public void ctearDown() {
+		tearDown();
 	}
 }
