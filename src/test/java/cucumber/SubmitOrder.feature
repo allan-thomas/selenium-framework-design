@@ -3,6 +3,7 @@ Feature: Purchase the order from Ecommerce Website
 Background:
 Given I landed on Ecommerce Page
 
+@smoke
 @Regression
 Scenario Outline: Positive Test of submitting the order
 
